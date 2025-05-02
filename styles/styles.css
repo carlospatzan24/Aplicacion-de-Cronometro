@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle, rgba(174,238,210,1) 0%, rgba(148,187,233,1) 100%);
+    padding: 50px;
+    color: rgb(49, 106, 199);
+}
+
+.contenedor {
+    max-width: 400px;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    color: rgb(168, 212, 255);
+    margin-bottom: 20px;
+}
+
+#pantalla {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.botones {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+button {
+    flex: 1;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 20px;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#iniciarBtn {
+    background-color: rgb(144, 238, 144);
+}
+
+#vueltaBtn {
+    background-color: rgb(255, 255, 109);
+}
+
+#detenerBtn {
+    background-color: rgb(203, 66, 66);
+}
+
+button:hover {
+    background-color: rgb(121, 161, 221);
+}
+
+button:disabled {
+    background-color: rgb(204, 204, 204) !important; 
+    color: rgb(136, 136, 136) !important;
+    cursor: not-allowed;
+}
+
+#vueltas {
+    list-style: none;
+    text-align: left;
+    padding-left: 0;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+#vueltas li {
+    padding: 8px;
+    border-bottom: 1px solid rgb(221, 221, 221);
+    font-size: 0.95em;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    .botones {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+}
